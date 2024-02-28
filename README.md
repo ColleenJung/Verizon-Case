@@ -40,7 +40,7 @@ Accuracy may not be a good measure if the dataset is not balanced (both negative
 - F1 Score becomes 1 only when precision and recall are both 1. F1 score becomes high only when both precision and recall are high. F1 score is the harmonic mean of precision and recall and is a better measure than accuracy.
 ![image](https://github.com/ColleenJung/Verizon-Case/assets/119357849/5d9e93be-025d-47cd-9e6c-c8fb8b5c39ce)
 
-**(To summarise the differences between the F1-score and the accuracy)[https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2]**
+**[To summarise the differences between the F1-score and the accuracy](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2)**
 
 - **Accuracy** is used when the True Positives and True negatives are more important while **F1-score** is used when the False Negatives and False Positives are crucial
 - **Accuracy** can be used when the class distribution is similar while **F1-score** is a better metric when there are imbalanced classes as in the above case.
