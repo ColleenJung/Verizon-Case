@@ -3,6 +3,9 @@
 ## Background
 Verizon Communications, facing risks in their phone contract business, needs to identify customers likely to default on payments. Providing phones as part of service agreements poses a financial risk akin to lending. Our goal is to develop an application for in-store use that aids staff in deciding on customer contract approvals.
 
+<img width="439" alt="image" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/460772fd-13da-4039-90e9-63a5e317f0a9">
+
+
 ## Business Problem
 Verizon faces a challenge with customers defaulting on their contracts after receiving high-value phones(worth >$1000). The task is to develop a predictive model that can be used in real-time to evaluate the risk of default and inform the decision on whether to approve a phone contract.
 **The objective is to build a predictive model for in-store use, aiding the approval or rejection of customer applications.**
@@ -46,15 +49,51 @@ Accuracy may not be a good measure if the dataset is not balanced (both negative
 - **Accuracy** can be used when the class distribution is similar while **F1-score** is a better metric when there are imbalanced classes as in the above case.
 - In most real-life classification problems, **imbalanced** class distribution exists and **thus F1-score is a better metric to evaluate our model on.**
 
+### Calculation Formula
+Benefit=Avoided Loss + Potential Profit - Unavoidable Loss - Missed Profit
+=(TP×Loss per Default)+(TN×Profit per Paying Customer)−(FP×Profit per Paying Customer)−(FN×Loss per Default)
+- Model could not be 100% accurate on prediction
+- Loss per Default -> $1000
+- Profit per Paying Customer -> $250
+- Correct Prediction
+    - Reject will-default customer
+    - Approve will-pay customer
+- Incorrect prediction
+    - Reject will-pay customer
+    - Approve will-default customer
+
+
 
 ## Model Performance
-The model's effectiveness was gauged not only by traditional statistical measures but also by its financial impact. We estimated the model's value by the potential dollar change per million applicants.
+The model's effectiveness was gauged by comparing 5 different models including 
+1. Random Forest
+2. XGBoost
+3. Gradient Boosting
+4. Logistic Model
+5. Decision Tree
+
 
 <img width="488" alt="image" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/2b64fa36-b098-45a3-be45-fa8d35aa7db5">
+
+<img width="308" alt="image" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/61d4e4d3-7994-42f5-9295-33562e379d60">
+
+## Why choose Gradient Boosting over XGBoost
+**XGBoost**
+- Highest business values
+- But, model not performed well (overfitting)
+- Not a stable model
+
+
+**Gradient Boosting**
+- Less business values than XGboost
+- Better model performance
 
 
 ## Business Value
 Assuming one million applicants, an 80% current approval rate, and an 11.5% default rate among approved applicants, our model aims to reduce defaults significantly. We projected the financial impact considering both direct losses from defaults and potential profits from long-term customer retention.
+
+<img width="609" alt="Screenshot 2024-02-27 at 10 42 31 PM" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/0c1dae02-95cc-4167-a11a-54f95d67d340">
+
 
 ### Assumptions and Estimates
 - Current default rate of approved applicants: 11.5%
