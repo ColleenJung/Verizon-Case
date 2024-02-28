@@ -5,6 +5,13 @@ Verizon Communications, facing risks in their phone contract business, needs to 
 
 <img width="439" alt="image" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/460772fd-13da-4039-90e9-63a5e317f0a9">
 
+### Assumptions and Estimates
+- Current default rate of approved applicants: 11.5%
+- Loss per default: Approx. $1000
+- Profit per paying customer over 36 months: Approx. $250
+- Assumed default rate for rejected applicants: Less than 50%
+
+Our model provides a credible estimate of the business value, with assumptions clearly outlined for transparency.
 
 ## Business Problem
 Verizon faces a challenge with customers defaulting on their contracts after receiving high-value phones(worth >$1000). The task is to develop a predictive model that can be used in real-time to evaluate the risk of default and inform the decision on whether to approve a phone contract.
@@ -89,17 +96,12 @@ The model's effectiveness was gauged by comparing 5 different models including
 - Better model performance
 
 
-## Business Value
+## Estimate of Business Value
 Assuming one million applicants, an 80% current approval rate, and an 11.5% default rate among approved applicants, our model aims to reduce defaults significantly. We projected the financial impact considering both direct losses from defaults and potential profits from long-term customer retention.
 
 <img width="609" alt="Screenshot 2024-02-27 at 10 42 31 PM" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/0c1dae02-95cc-4167-a11a-54f95d67d340">
 
+<img width="397" alt="image" src="https://github.com/ColleenJung/Verizon-Case/assets/119357849/cff74590-458d-4d55-853e-a9b213e51f06">
 
-### Assumptions and Estimates
-- Current default rate of approved applicants: 11.5%
-- Loss per default: Approx. $1000
-- Profit per paying customer over 36 months: Approx. $250
-- Assumed default rate for rejected applicants: Less than 50%
 
-Our model provides a credible estimate of the business value, with assumptions clearly outlined for transparency.
 
