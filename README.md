@@ -24,5 +24,3 @@ Assuming one million applicants, an 80% current approval rate, and an 11.5% defa
 
 Our model provides a credible estimate of the business value, with assumptions clearly outlined for transparency.
 
-## Further Contact
-For detailed insights and discussions on model specifics and implementation strategies, please contact [Your Contact Information].
